@@ -1,5 +1,6 @@
 package com.gugarush.android.shippingbr;
 import android.app.Application;
+import android.util.Log;
 
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
@@ -19,6 +20,7 @@ public class GlobalApp extends Application {
     
     @Override
     public void onCreate() {
+        Log.d("gofc", "onCreate GlobalApp");
         mRequestQueue = Volley.newRequestQueue(this);
         mSettings = new Settings(this);
     }

@@ -95,24 +95,25 @@ public class SettingsActivity extends Activity implements OnClickListener {
     private void saveServicesCode() {
         String codes = "";
        if(checkPAC.isChecked()){
-           codes = CODIGO_PAC + ",";
+           codes += CODIGO_PAC + ",";
        }
        if(checkSedex.isChecked()){
-           codes = CODIGO_SEDEX + ",";
+           codes += CODIGO_SEDEX + ",";
        }
        if(checkSedex10.isChecked()){
-           codes = CODIGO_SEDEX_DEZ + ",";
+           codes += CODIGO_SEDEX_DEZ + ",";
        }
        if(checkSedexACobrar.isChecked()){
-           codes = CODIGO_SEDEX_A_COBRAR + ",";
+           codes += CODIGO_SEDEX_A_COBRAR + ",";
        }
        if(checkSedexHoje.isChecked()){
-           codes = CODIGO_SEDEX_HOJE + ",";
+           codes += CODIGO_SEDEX_HOJE + ",";
        }
        if(TextUtils.isEmpty(codes)) {
            Toast.makeText(this, R.string.alert_at_least_one_service, Toast.LENGTH_LONG).show();
        } else {
-           GlobalApp.mSettings.setServicesCode(codes.substring(0, codes.length()-2));
+           GlobalApp.mSettings.setServicesCode(codes.substring(0, codes.length()-1));
+           finish();
        }
                
     }   
