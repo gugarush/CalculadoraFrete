@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HomeActivity" >
+
+    <CheckBox
+        android:id="@+id/pac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:tag="41106"
+        android:text="@string/pac" />
+
+    <CheckBox
+        android:id="@+id/sedex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pac"
+        android:layout_below="@+id/pac"
+        android:layout_marginTop="30dp"
+        android:tag="40010"
+        android:text="@string/sedex" />
+
+    <CheckBox
+        android:id="@+id/sedex_a_cobrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sedex"
+        android:layout_below="@+id/sedex"
+        android:layout_marginTop="30dp"
+        android:tag="40045"
+        android:text="@string/sedex_a_cobrar" />
+
+    <CheckBox
+        android:id="@+id/sedex_dez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/sedex_a_cobrar"
+        android:layout_alignLeft="@+id/sedex_a_cobrar"
+        android:layout_marginTop="30dp"
+        android:tag="40215"
+        android:text="@string/sedex_dez" />
+
+    <CheckBox
+        android:id="@+id/sedex_hoje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sedex_dez"
+        android:layout_below="@+id/sedex_dez"
+        android:layout_marginTop="30dp"
+        android:tag="40290"
+        android:text="@string/sedex_hoje" />
+
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sedex_hoje"
+        android:layout_below="@+id/sedex_hoje"
+        android:layout_marginTop="38dp"
+        android:text="@string/ok" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonOk"
+        android:layout_alignBottom="@+id/buttonOk"
+        android:layout_toRightOf="@+id/sedex_a_cobrar"
+        android:text="@string/cancel" />
+
+</RelativeLayout>

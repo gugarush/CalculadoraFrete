@@ -2,7 +2,18 @@
 <resources>
 
     <string name="app_name">ShippingBR</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Configurações</string>
     <string name="hello_world">Hello world!</string>
 
+    <!-- Settings Activity -->
+    
+    <string name="sedex">Sedex</string>
+    <string name="sedex_a_cobrar">Sedex a Cobrar</string>
+    <string name="sedex_dez">Sedex 10</string>
+    <string name="sedex_hoje">Sedex Hoje</string>
+    <string name="pac">PAC</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="alert_at_least_one_service">Você precisa selecionar um ou mais serviço</string>
+    
 </resources>
