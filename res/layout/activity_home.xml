@@ -8,10 +8,80 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".HomeActivity" >
 
-    <TextView
+    <android.widget.TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="157dp"
+        android:layout_marginLeft="24dp" />
+
+    <TextView
+        android:id="@+id/textCepOrigem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/cep_origem" />
+
+    <TextView
+        android:id="@+id/textCepDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textCepOrigem"
+        android:layout_below="@+id/editCepOrigem"
+        android:layout_marginTop="18dp"
+        android:text="@string/cep_destino" />
+
+    <TextView
+        android:id="@+id/textPesoEstimado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textCepDestino"
+        android:layout_below="@+id/editCepDestino"
+        android:layout_marginTop="20dp"
+        android:text="@string/peso_estimado_ate" />
+
+    <EditText
+        android:id="@+id/editCepDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textCepDestino"
+        android:layout_alignBottom="@+id/textCepDestino"
+        android:layout_toRightOf="@+id/textPesoEstimado"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editCepOrigem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textCepOrigem"
+        android:layout_alignBottom="@+id/textCepOrigem"
+        android:layout_alignRight="@+id/editCepDestino"
+        android:layout_toRightOf="@+id/textPesoEstimado"
+        android:ems="10"
+        android:inputType="number" 
+        android:text="04564000"/>
+
+    <Spinner
+        android:id="@+id/spinnerPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editCepDestino"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editCepDestino"
+        android:entries="@array/array_pesos"
+        android:prompt="@string/prompt_spinner_peso" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/calcular" />
 
 </RelativeLayout>

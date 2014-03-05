@@ -8,6 +8,9 @@
 package com.example.shippingbr;
 
 public final class R {
+    public static final class array {
+        public static final int array_pesos=0x7f060000;
+    }
     public static final class attr {
     }
     public static final class dimen {
@@ -24,31 +27,45 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int buttonCancel=0x7f080007;
-        public static final int buttonOk=0x7f080006;
-        public static final int menu_settings=0x7f080008;
-        public static final int pac=0x7f080001;
-        public static final int sedex=0x7f080002;
-        public static final int sedex_a_cobrar=0x7f080003;
-        public static final int sedex_dez=0x7f080004;
-        public static final int sedex_hoje=0x7f080005;
-        public static final int textView1=0x7f080000;
+        public static final int buttonCalculate=0x7f090007;
+        public static final int buttonCancel=0x7f09000e;
+        public static final int buttonOk=0x7f09000d;
+        public static final int editCepDestino=0x7f090005;
+        public static final int editCepOrigem=0x7f090003;
+        public static final int menu_settings=0x7f09000f;
+        public static final int pac=0x7f090008;
+        public static final int sedex=0x7f090009;
+        public static final int sedex_a_cobrar=0x7f09000a;
+        public static final int sedex_dez=0x7f09000b;
+        public static final int sedex_hoje=0x7f09000c;
+        public static final int spinnerPeso=0x7f090006;
+        public static final int textCepDestino=0x7f090002;
+        public static final int textCepOrigem=0x7f090001;
+        public static final int textPesoEstimado=0x7f090004;
+        public static final int textView1=0x7f090000;
     }
     public static final class layout {
         public static final int activity_home=0x7f030000;
         public static final int activity_settings=0x7f030001;
     }
     public static final class menu {
-        public static final int home=0x7f070000;
+        public static final int home=0x7f080000;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int alert_at_least_one_service=0x7f05000a;
         public static final int app_name=0x7f050000;
+        public static final int calcular=0x7f05000f;
         public static final int cancel=0x7f050009;
+        public static final int cep_destino=0x7f05000c;
+        /**  Form Activity  
+         */
+        public static final int cep_origem=0x7f05000b;
         public static final int hello_world=0x7f050002;
         public static final int ok=0x7f050008;
         public static final int pac=0x7f050007;
+        public static final int peso_estimado_ate=0x7f05000d;
+        public static final int prompt_spinner_peso=0x7f05000e;
         /**  Settings Activity 
          */
         public static final int sedex=0x7f050003;
@@ -78,10 +95,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
     }
 }
