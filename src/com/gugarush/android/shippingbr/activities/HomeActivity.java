@@ -51,7 +51,7 @@ public class HomeActivity extends Activity implements OnClickListener{
 
 	private void requestData() {
         String url = Constants.SERVICE_URL
-                + "frete?nCdServico=" + GlobalApp.mSettings.getServicesCode() + 
+                + "frete/prazo?nCdServico=" + GlobalApp.mSettings.getServicesCode() + 
                 "&sCepOrigem=" + editCepOrigem.getText() + "&sCepDestino="+ editCepDestino.getText() +"&nVlPeso="+ spinnerPeso.getSelectedItem() +"&nCdFormato=1&nVlComprimento=20&" +
                 "nVlAltura=2&nVlLargura=11&nVlDiametro=20&nVlValorDeclarado=500";
 
